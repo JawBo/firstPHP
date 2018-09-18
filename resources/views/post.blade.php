@@ -11,8 +11,6 @@
 
 <body>
 
-
-
     <div class="bd-example">
         <table class="table">
             <thead>

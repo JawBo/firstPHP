@@ -29,12 +29,11 @@ class PostsController extends Controller
         return redirect ('/');
     }   
     public function create(Request $request){
-        
-        $item = Post::create();
-        $request->leTitre = $item->titre;
-        $request->laDescription=$item->description;
+        $item= new Post;
+        $item->titre = $request->leTitre;
+        $item->description = $request->laDescription;
         $item->save();
-        return redirect('/');
+        return redirect('/');   
     }
     
 
